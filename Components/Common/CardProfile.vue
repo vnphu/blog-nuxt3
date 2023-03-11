@@ -84,6 +84,7 @@ body {
   margin: auto;
   aspect-ratio: 1/1;
   background-position: center;
+  border-radius: 50%;
   background-size: cover;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
 }
