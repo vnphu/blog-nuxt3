@@ -111,4 +111,9 @@ useHead({
 })
 </script>
 
-<style scoped></style>
+<style scoped>
+.ds-banner {
+  gap: 24px;
+  padding: 24px;
+}
+</style>
