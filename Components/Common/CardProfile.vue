@@ -1,7 +1,7 @@
 <template>
   <div class="profile-card">
     <div class="profile-card-header">
-      <div class="profile-image"></div>
+      <div class="profile-image" :style="{ backgroundImage: `url(${user.profile_image})` }"></div>
       <div class="profile-info">
         <h3 class="profile-name">{{ user.name }}</h3>
         <p class="profile-desc">{{ user.location }}</p>
@@ -27,7 +27,7 @@
       </ul>
 
       <div class="action">
-        <button class="btn btn-pink">Follow</button>
+        <a :href="user.website_url" target="_blank" class="btn btn-pink">Follow</a>
         <button class="btn btn-gray-outline">Message</button>
       </div>
     </div>
@@ -80,11 +80,11 @@ body {
   top: -60px;
   border-radius: 1rem;
   background-image: url(https://yt3.ggpht.com/ytc/AKedOLSB-oR-xmvVSZXJ3gbK12uvv0AJUvajwxMie_R_uw=s900-c-k-c0x00ffffff-no-rj);
-  width: 70%;
-  margin: auto;
+  width: 75%;
   aspect-ratio: 1/1;
-  background-position: center;
   border-radius: 50%;
+  margin: auto;
+  background-position: center;
   background-size: cover;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
 }
